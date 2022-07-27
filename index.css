@@ -1,0 +1,24 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    max-width: 800px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+code {
+    /* background: hsl(220, 80%, 90%); */
+}
+
+pre {
+    white-space: pre-wrap;
+    background: #f6f8fa;
+}
