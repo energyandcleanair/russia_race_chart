@@ -165,7 +165,7 @@ const axis = (graph, chart_capacity) => {
     return (transition) => {
         g.transition(transition).call(axis);
         g.select(".tick:first-of-type text").remove();
-        g.selectAll(".tick:not(:first-of-type) line").attr("stroke", "#FFFFFF1F");
+        g.selectAll(".tick:not(:first-of-type) line").attr("stroke", "#FFFFFFFF");
         g.select(".domain").remove();
     };
 }
