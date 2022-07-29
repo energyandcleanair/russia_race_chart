@@ -1,6 +1,6 @@
 const margin = ({top: 16, right: 6, bottom: 6, left: 0})
 const chart_capacity = 10;
-var width = 600;
+const width = document.querySelector('body').offsetWidth;
 const barHeight = 50
 const duration = 600
 const frames = 1
@@ -174,7 +174,7 @@ const ticker = (graph, start, chart_capacity) => {
   const now = graph.append("text")
       .style("font", `bold ${barHeight}px var(--sans-serif)`)
       .style("font-variant-numeric", "tabular-nums")
-      .style("font-size", "28px")
+      .style("font-size", `${Math.min(28, 28*width/400)}px`)
       .attr("fill", "#8cc9D0")
     //   .attr("font-weight", "500")
       .attr("text-anchor", "end")
@@ -193,7 +193,7 @@ const add_logo = (graph) => {
         .attr("text-anchor", "end")
         .attr("x", width - 200)
         .attr("y", margin.top + barHeight * (chart_capacity - 0.45))
-        .attr('width', 200)
+        .attr('width', Math.min(200, width/3))
         // .attr('height', 70)
         .attr("xlink:href", "crea_logo_notext.svg")
 }
@@ -267,8 +267,6 @@ const aggregated_data = (data, regions) => {
 const draw = async () => {
     let data = await fetch_data()
     document.getElementById('loading').style.display = 'none';
-
-    width = d3.select('body').node().offsetWidth;
 
     var graph = d3.select("body")
        .append("svg")
