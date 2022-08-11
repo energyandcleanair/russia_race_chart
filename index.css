@@ -22,3 +22,9 @@ pre {
     white-space: pre-wrap;
     background: #f6f8fa;
 }
+
+.visualisation {
+    border-top: 1px solid #CCC;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
