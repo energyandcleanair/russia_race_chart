@@ -4,10 +4,11 @@ body {
 
 h1 {
     margin-bottom: 0;
-    font-size: 28px;
+    font-size: 22px;
+    color: #35416C;
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
