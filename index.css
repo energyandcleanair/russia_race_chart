@@ -1,6 +1,7 @@
 body {
     font-family: "Open Sans", sans-serif;
-    max-width: 800px;
+    /* max-width: 900px; */
+    width: 700px;
     display: table-cell;
     vertical-align: middle;
 }

@@ -1,11 +1,14 @@
 <html>
   <head>
     <link href="index.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script> -->
+    <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
+    <input id="copyTextarea" type="hidden"></input>
+
     <div>
-      <div class="visualisation">
-        <h1></h1>
+      <div class="visualisation" id="vis1">
         <div>
           <iframe
             src="https://energyandcleanair.github.io/russia_visualisations/counter/counter.html"
@@ -20,25 +23,12 @@
             "
           ></iframe>
         </div>
-        <div class="embed">
-          <pre
-            class="notranslate"
-          ><code>&lt;iframe src="https://energyandcleanair.github.io/russia_visualisations/counter/counter.html";
-          style="
-            height: 480px;
-            width: 100%;
-            border: none;
-            max-width: 830px;
-            margin: 0 auto;
-            display: block;
-          "&gt;&lt;/iframe&gt;
-
-</code></pre>
-        </div>
       </div>
-      <div class="visualisation">
+      <button onclick="copyToClipboard('vis1')"> Copy to clipboard </button>
+      
+      <div class="visualisation" id="vis2">
         <h1></h1>
-        <div>
+        <div">
           <iframe
             src="https://energyandcleanair.github.io/russia_visualisations/race_chart/race_chart.html"
             ;
@@ -52,7 +42,7 @@
             "
           ></iframe>
         </div>
-        <div class="embed">
+        <!-- <div class="embed">
           <pre
             class="notranslate"
           ><code>&lt;iframe src="https://energyandcleanair.github.io/russia_visualisations/race_chart/race_chart.html";
@@ -65,25 +55,26 @@
             display: block;
           "&gt;&lt;/iframe&gt;
 </code></pre>
-        </div>
+        </div> -->
       </div>
+      <button onclick="copyToClipboard('vis2')"> Copy to clipboard </button>
 
-      <div class="visualisation">
-        <h1></h1>
+      <div class="visualisation" id="vis3">
         <div
           class="flourish-embed flourish-chart"
           data-src="visualisation/10755702?896519"
         >
           <script src="https://public.flourish.studio/resources/embed.js"></script>
         </div>
-        <div class="embed">
+        <!-- <div class="embed">
           <pre class="notranslate"><code>
             &lt;div class=&quot;flourish-embed flourish-chart&quot; data-src=&quot;visualisation/10755702?896519&quot;&gt;&lt;script src=&quot;https://public.flourish.studio/resources/embed.js&quot;&gt;&lt;/script&gt;&lt;/div&gt;
           </code></pre>
-        </div>
+        </div> -->
       </div>
+      <button onclick="copyToClipboard('vis3')"> Copy to clipboard </button>
 
-      <div class="visualisation">
+      <div class="visualisation" id="vis4">
         <h1></h1>
         <div
           class="flourish-embed flourish-chart"
@@ -91,7 +82,7 @@
         >
           <script src="https://public.flourish.studio/resources/embed.js"></script>
         </div>
-        <div class="embed">
+        <!-- <div class="embed">
           <pre class="notranslate"><code>
             &lt;div
           class="flourish-embed flourish-chart"
@@ -100,11 +91,11 @@
           &lt;script src="https://public.flourish.studio/resources/embed.js"&gt;&lt;/script&gt;
         &lt;/div&gt;
           </code></pre>
-        </div>
+        </div> -->
       </div>
+       <button onclick="copyToClipboard('vis4')"> Copy to clipboard </button>
 
-      <div class="visualisation">
-        <h1></h1>
+      <div class="visualisation" id="vis5">
         <div
           class="flourish-embed flourish-chart"
           data-src="visualisation/10885465?896519"
@@ -112,7 +103,7 @@
           <script src="https://public.flourish.studio/resources/embed.js"></script>
         </div>
 
-        <div class="embed">
+        <!-- <div class="embed">
           <pre class="notranslate"><code>
             &lt;div
          class=&quot;flourish-embed flourish-chart&quot;
@@ -121,8 +112,34 @@
          &lt;script src=&quot;https://public.flourish.studio/resources/embed.js&quot;&gt;&lt;/script&gt;
        &lt;/div&gt;
           </code></pre>
-        </div>
+        </div> -->
       </div>
+      <button onclick="copyToClipboard('vis5')"> Copy to clipboard </button>
+
+      <div class="visualisation" id="vis6">
+        <div
+          class="flourish-embed flourish-chart"
+          data-src="visualisation/10897307?896519"
+        >
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+<!-- 
+        <div class="embed">
+          <pre class="notranslate"><code>
+            &lt;div class="flourish-embed flourish-chart" data-src="visualisation/10897307?896519"
+        &gt;
+          &lt;script src="https://public.flourish.studio/resources/embed.js"&gt;&lt;/script&gt;
+        &lt;/div&gt;
+          </code></pre>
+        </div> -->
+      
+      </div>
+      <button onclick="copyToClipboard('vis6')"> Copy to clipboard </button>
+       
+
     </div>
+
+     
+    
   </body>
 </html>
